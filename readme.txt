@@ -10,7 +10,6 @@ port: 2087
 
 pada bagian jalur websocket (path):
 jadi seperti ini.
-
 /47.250.81.46=2087
 
 ====================================
@@ -32,6 +31,10 @@ au2
 au3
 192.9.190.80=23862
 ====================================
+jika ada proxy yang mati, bisa diubah di exclave, darktunnel, v2rayng, httpcustom apk dsb, pada path, seperti contoh di atas.
+
+kalau merubah proxy di githup ini, terlalu lama, harus deploy ulang juga, ke cloudflare.
+====================================
 
 If the IP uses a port other than 443 or 80,
 
@@ -43,7 +46,6 @@ Port: 2087
 
 In the WebSocket path section:
 it becomes this:
-
 /47.250.81.46=2087
 
 ====================================
