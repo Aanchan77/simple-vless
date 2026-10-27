@@ -3,8 +3,34 @@
 import { connect } from 'cloudflare:sockets';
 
 const listProxy = [
-    { path: '/id1', proxy: '147.139.189.225' },
-    { path: '/my1', proxy: '47.250.81.46' },
+{ path: '/id1', proxy: '147.139.189.225' },
+{ path: '/id2', proxy: '202.155.95.132' },
+{ path: '/id3', proxy: '36.95.152.58' },
+{ path: '/id4', proxy: '172.232.249.224' },
+{ path: '/sg1', proxy: '43.156.116.194' },
+{ path: '/sg2', proxy: '164.52.2.99' },
+{ path: '/sg3', proxy: '129.150.36.188' },
+{ path: '/sg4', proxy: '143.42.66.91' },
+{ path: '/sg5', proxy: '43.156.181.203' },
+{ path: '/my1', proxy: '47.250.212.59' },
+{ path: '/my2', proxy: '47.250.81.46' },
+{ path: '/jp1', proxy: '64.110.104.30' },
+{ path: '/jp2', proxy: '168.138.46.67' },
+{ path: '/jp3', proxy: '138.2.18.82' },
+{ path: '/jp4', proxy: '103.75.118.144' },
+{ path: '/ch1', proxy: '38.180.85.203' },
+{ path: '/ch2', proxy: '91.245.225.69' },
+{ path: '/in1', proxy: '216.10.243.159' },
+{ path: '/in2', proxy: '20.235.105.146' },	
+{ path: '/nl1', proxy: '94.241.174.229' },
+{ path: '/nl2', proxy: '46.17.102.93' },
+{ path: '/nl3', proxy: '89.110.66.154' },
+{ path: '/us1', proxy: '72.13.122.137' },
+{ path: '/us2', proxy: '129.159.84.71' },
+{ path: '/us3', proxy: '23.95.113.61' },
+{ path: '/au1', proxy: '170.64.152.77' },
+{ path: '/au2', proxy: '152.67.101.72' },
+{ path: '/au3', proxy: '192.9.190.80' }	,
     //tambahin sendiri
 ];
 let proxyIP;
