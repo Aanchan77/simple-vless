@@ -33,6 +33,8 @@ const listProxy = [
     { path: '/au3', proxy: '192.9.190.80' },
 ];
 
+/* ---------- HELPERS (anti 1101) ---------- */
+
 let proxyIP;
 export default {
     async fetch(request, ctx) {
@@ -59,6 +61,9 @@ export default {
         }
     },
 };
+
+/* ---------- MAIN WORKER ---------- */
+
 async function getAllConfigVless(hostName) {
     try {
         let allConfigs = '';
