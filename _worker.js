@@ -8,11 +8,11 @@ const listProxy = [
     { path: '/id3', proxy: '36.95.152.58' },
     { path: '/id4', proxy: '172.232.249.224' },
     { path: '/sg1', proxy: '43.156.116.194' },
-    { path: '/sg2', proxy: '164.52.2.99' },
+    { path: '/sg2', proxy: '168.138.165.174' },
     { path: '/sg3', proxy: '162.4.173.241' },
     { path: '/sg4', proxy: '143.42.66.91' },
     { path: '/sg5', proxy: '94.237.66.99' },
-    { path: '/my1', proxy: '47.250.212.59' },
+    { path: '/my1', proxy: '58.27.117.24' },
     { path: '/my2', proxy: '47.250.81.46' },
     { path: '/jp1', proxy: '64.110.104.30' },
     { path: '/jp2', proxy: '45.76.198.248' },
@@ -25,7 +25,7 @@ const listProxy = [
     { path: '/nl1', proxy: '94.241.174.229' },
     { path: '/nl2', proxy: '46.17.102.93' },
     { path: '/nl3', proxy: '89.110.66.154' },
-    { path: '/us1', proxy: '72.13.122.137' },
+    { path: '/us1', proxy: '38.60.91.95' },
     { path: '/us2', proxy: '129.159.84.71' },
     { path: '/us3', proxy: '23.95.113.61' },
     { path: '/au1', proxy: '170.64.152.77' },
@@ -72,8 +72,8 @@ async function getAllConfigVless(hostName) {
             const response = await fetch(`https://ipwhois.app/json/${proxy}`);
             const data = await response.json();
             const pathFixed = encodeURIComponent(path);
-            const vlessTls = `vless://bexnxx\u0040${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=${pathFixed}#${data.isp} (${data.country_code})`;
-            const vlessNtls = `vless://bexnxx\u0040${hostName}:80?path=${pathFixed}&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#${data.isp} (${data.country_code})`;
+            const vlessTls = `vless://e463c4ae-d68e-4308-9121-485d2798a404\u0040${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=${pathFixed}#${data.isp} (${data.country_code})`;
+            const vlessNtls = `vless://e463c4ae-d68e-4308-9121-485d2798a404\u0040${hostName}:80?path=${pathFixed}&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#${data.isp} (${data.country_code})`;
             const vlessTlsFixed = vlessTls.replace(/ /g, '+');
             const vlessNtlsFixed = vlessNtls.replace(/ /g, '+');
             allConfigs += 
